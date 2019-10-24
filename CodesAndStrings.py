@@ -48,3 +48,11 @@ print(middleCharacter)
 
 print(name[-1])
 print(name[-3])
+
+for i in range(0, len(name)):
+    print(name[0:i])
+
+print(name[0:3])
+
+# slicing and dicing
+print(name[4:-8])
