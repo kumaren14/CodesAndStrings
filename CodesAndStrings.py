@@ -56,3 +56,15 @@ print(name[0:3])
 
 # slicing and dicing
 print(name[4:-8])
+
+# searching
+
+print("Biv" in name)# it is true that the string "Biv" is IN the string "name"
+
+print("y" not in name)# false, because why is in name
+
+if "y" not in name:
+    print("y is not in name")
+else:
+    print("y is in name")
+
