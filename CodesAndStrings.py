@@ -68,3 +68,55 @@ if "y" not in name:
 else:
     print("y is in name")
 
+
+# String Methods to Investigate:
+# Method       Use Example       Explanation
+# Center       aStr.center(w)
+# ljust       aStr.ljust(w)
+# rjust       aStr.rjust(w)
+# upper       aStr.upper(w)
+# lower       aStr.lower(w)
+# index       aStr.index(item)
+# rindex       aStr.rindex(item)
+# find       aStr.find(item)
+# rfind       aStr.rfind(item)
+# replace       aStr.replace(old, new)
+
+
+# Character Functions
+
+print(ord('a'))# this function can give us the unicode value for a piece of text or a string
+# unicode is basically a universal language for symbols and characters
+
+print(ord('1'))
+
+print(chr(1)) # this is the opposite. It can give you the symbol/character for the unicode you type in
+
+print(ord('%'))
+
+print(chr(1))
+print(chr(2))
+print(chr(3))
+print(chr(4))
+
+def letterToIndex(letter):
+    from string import ascii_lowercase
+    alphabet = ascii_lowercase
+    idx = alphabet.find(letter)
+    if idx == -1:                                         # means that it wasn't in the alphabe
+        print("error:", letter, "is not in the alphabet.")
+    return idx
+
+def indexToLetter(idx):
+    from string import ascii_lowercase
+    alphabet = ascii_lowercase + ' '
+    letter = ''
+    if idx >= len(alphabet):
+        print("error:", idx, "is too large.")
+    elif idx < 0:
+        print("error:", idx, "is too small")
+    else:
+        letter = alphabet[idx]
+    return letter
+
+print(letterToIndex("k"))
