@@ -109,3 +109,15 @@ from mapper import *       # we are importing the code and functions from a diff
 print(letterToIndex('a'))
 
 print(indexToLetter(24))
+
+
+
+from crypto import *
+
+print(scramble2Encrypt("THE CRANE FLIES AT MIDNIGHT"))
+
+print(scramble2Decrypt("H RN LE TMDIHTECAEFISA INGT"))
+
+
+
+
