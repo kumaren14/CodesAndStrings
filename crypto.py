@@ -39,29 +39,29 @@ def scramble2Decrypt(cipherText):
     return plainText
 
 
-alphabet = "abcdefghijklmnopqrstuvwxyz "
+alphabet = "abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ.,?!"
 
 def cesar(word):
     encrypt = ""
     for ch in word:
         Letters = alphabet.find(ch)
-        nextLetters = (Letters + 3) % 27
+        nextLetters = (Letters + 3) % 57
         encrypt += alphabet[nextLetters]
     return encrypt
 
 
-print(cesar("my name is kumaren"))
+print(cesar("My name is Kumaren."))
 
 def decrypt(encrypt):
     translate = ""
     for ch in encrypt:
         Letters = alphabet.find(ch)
-        pastLetters = (Letters - 3) % 27
+        pastLetters = (Letters - 3) % 57
         translate += alphabet[pastLetters]
     return translate
 
 
-print(decrypt("pacqdphclvcnxpduhqc"))
+print(decrypt("PACqdphClvCNxpduhq!"))
 
 
 
