@@ -39,45 +39,29 @@ def scramble2Decrypt(cipherText):
     return plainText
 
 
+alphabet = "abcdefghijklmnopqrstuvwxyz "
 
-def CesarEncrypt():
-
-    input("type a letter")
-
-    if "a"
-        print("b")
-    else
-        if b
-            print("c")
-    else
-        if c
-            print("e")
-    return CesarEncrypt()
+def cesar(word):
+    encrypt = ""
+    for ch in word:
+        Letters = alphabet.find(ch)
+        nextLetters = (Letters + 3) % 27
+        encrypt += alphabet[nextLetters]
+    return encrypt
 
 
+print(cesar("my name is kumaren"))
+
+def decrypt(encrypt):
+    translate = ""
+    for ch in encrypt:
+        Letters = alphabet.find(ch)
+        pastLetters = (Letters - 3) % 27
+        translate += alphabet[pastLetters]
+    return translate
 
 
-
-plainText = input("What is your plaintext? ")
-shift = input("What is your shift? ")
-
-def caesar(plainText, shift):
-
-    for ch in plainText:
-        if ch.isalpha():
-            stayInAlphabet = ord(ch) + shift
-            if stayInAlphabet > ord('z'):
-                stayInAlphabet -= 26
-            finalLetter = chr(stayInAlphabet)
-        cipherText = ""
-        cipherText += finalLetter
-
-    print("Your ciphertext is: ", cipherText)
-
-    return cipherText
-
-caesar(plainText, shift)
-
+print(decrypt("pacqdphclvcnxpduhqc"))
 
 
 
