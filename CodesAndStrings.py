@@ -96,8 +96,6 @@ print(chr(2))
 print(chr(3))
 print(chr(4))
 
-s
-
 
 
 
