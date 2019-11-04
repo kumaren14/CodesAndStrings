@@ -68,18 +68,16 @@ else:
     print("y is in name")
 
 
-# String Methods to Investigate:
-# Method       Use Example       Explanation
-# Center       aStr.center(w)
-# ljust       aStr.ljust(w)
-# rjust       aStr.rjust(w)
-# upper       aStr.upper(w)
-# lower       aStr.lower(w)
-# index       aStr.index(item)
-# rindex       aStr.rindex(item)
-# find       aStr.find(item)
-# rfind       aStr.rfind(item)
-# replace       aStr.replace(old, new)
+# Method     Use example      Explanation
+# Center    aStr.center(w)     Finds the center point of whatever word or phrase you put for "w".
+# ljust     aStr.ljust(w)      It returns the string left of its justified length/width.   ***
+# rjust     aStr.rjust(w)      It returns the string right of its justified length/width.  ***
+# upper     aStr.upper()       Switches lowercase letters to uppercase.
+# lower     aStr.lower()       Switches uppercase letters to lowercase.
+# index     aStr.index(item)   It searches for a given element from the list that you give it.
+# rindex    aStr.rindex(item)  It searches for the highest index then returns it.
+# find      aStr.find(item)    It is used to find an (Item) that you tell it to
+# rfind     aStr.rfind(item)   It finds the highest index and does the same as the find string
 
 
 # Character Functions
@@ -98,7 +96,7 @@ print(chr(2))
 print(chr(3))
 print(chr(4))
 
-
+s
 
 
 
