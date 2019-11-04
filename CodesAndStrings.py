@@ -87,7 +87,7 @@ print(ord('a'))# this function can give us the unicode value for a piece of text
 
 print(ord('1'))
 
-print(chr(1)) # this is the opposite. It can give you the symbol/character for the unicode you type in
+print(chr(1)) # opposite of ord. It can give you the symbol/character for the unicode you type in
 
 print(ord('%'))
 
@@ -95,6 +95,8 @@ print(chr(1))
 print(chr(2))
 print(chr(3))
 print(chr(4))
+
+
 
 
 
